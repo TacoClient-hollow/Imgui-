@@ -24,6 +24,9 @@ include_directories(
     backends
 )
 
+# Set linker flags
+set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -static -lGLESv3 -landroid -llog -lEGL")
+
 # Link the Dobby library
 add_library(dobby STATIC IMPORTED)
 set_target_properties(dobby PROPERTIES IMPORTED_LOCATION
