@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/armeabi-v7a/_deps/dobby-subbuild/CMakeFiles/dobby-populate"
+		},
+		{
+			"file" : "/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/armeabi-v7a/_deps/dobby-subbuild/CMakeFiles/dobby-populate.rule"
+		},
+		{
+			"file" : "/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/armeabi-v7a/_deps/dobby-subbuild/CMakeFiles/dobby-populate-complete.rule"
+		},
+		{
+			"file" : "/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/armeabi-v7a/_deps/dobby-subbuild/dobby-populate-prefix/src/dobby-populate-stamp/dobby-populate-build.rule"
+		},
+		{
+			"file" : "/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/armeabi-v7a/_deps/dobby-subbuild/dobby-populate-prefix/src/dobby-populate-stamp/dobby-populate-configure.rule"
+		},
+		{
+			"file" : "/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/armeabi-v7a/_deps/dobby-subbuild/dobby-populate-prefix/src/dobby-populate-stamp/dobby-populate-download.rule"
+		},
+		{
+			"file" : "/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/armeabi-v7a/_deps/dobby-subbuild/dobby-populate-prefix/src/dobby-populate-stamp/dobby-populate-install.rule"
+		},
+		{
+			"file" : "/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/armeabi-v7a/_deps/dobby-subbuild/dobby-populate-prefix/src/dobby-populate-stamp/dobby-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/armeabi-v7a/_deps/dobby-subbuild/dobby-populate-prefix/src/dobby-populate-stamp/dobby-populate-patch.rule"
+		},
+		{
+			"file" : "/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/armeabi-v7a/_deps/dobby-subbuild/dobby-populate-prefix/src/dobby-populate-stamp/dobby-populate-test.rule"
+		},
+		{
+			"file" : "/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/armeabi-v7a/_deps/dobby-subbuild/dobby-populate-prefix/src/dobby-populate-stamp/dobby-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"dobby-populate"
+		],
+		"name" : "dobby-populate"
+	}
+}

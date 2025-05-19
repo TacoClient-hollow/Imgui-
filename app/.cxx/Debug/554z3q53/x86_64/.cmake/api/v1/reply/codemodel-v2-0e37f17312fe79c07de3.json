@@ -1,0 +1,189 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "_deps/dobby-build",
+					"childIndexes" : 
+					[
+						2,
+						3,
+						4
+					],
+					"jsonFile" : "directory-_deps.dobby-build-Debug-6ca182d176ac0c7c2da4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/x86_64/_deps/dobby-src",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"build" : "_deps/dobby-build/external/logging",
+					"jsonFile" : "directory-_deps.dobby-build.external.logging-Debug-91df4fa6840eb0784dd3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/x86_64/_deps/dobby-src/external/logging",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "_deps/dobby-build/external/osbase",
+					"jsonFile" : "directory-_deps.dobby-build.external.osbase-Debug-9cfc6fb127f15c6dc330.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/x86_64/_deps/dobby-src/external/osbase",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "_deps/dobby-build/builtin-plugin/SymbolResolver",
+					"jsonFile" : "directory-_deps.dobby-build.builtin-plugin.SymbolResolver-Debug-db2cd8e10ae73e1d1591.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/x86_64/_deps/dobby-src/builtin-plugin/SymbolResolver",
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "mc",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"name" : "Dobby",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "dobby::@6545659c670079bcb012",
+					"jsonFile" : "target-dobby-Debug-aa205ce9232c98816eb6.json",
+					"name" : "dobby",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "dobby_static::@6545659c670079bcb012",
+					"jsonFile" : "target-dobby_static-Debug-ba573a9d45d3d6f53b11.json",
+					"name" : "dobby_static",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "dobby_symbol_resolver::@1fafcae63ccfe7d4dd70",
+					"jsonFile" : "target-dobby_symbol_resolver-Debug-9a704a9767016b8dd394.json",
+					"name" : "dobby_symbol_resolver",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "logging::@cba9e4b94e1bd2b2df68",
+					"jsonFile" : "target-logging-Debug-6413e0c8a9d6172b1db7.json",
+					"name" : "logging",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mc-Debug-90d24824541c1457e3a5.json",
+					"name" : "mc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "osbase::@e09ae2cd78420703fa22",
+					"jsonFile" : "target-osbase-Debug-dfbcf16317ef8791efc0.json",
+					"name" : "osbase",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/x86_64",
+		"source" : "/home/uptightsuperlabs/Desktop/taco-client/app/src/main/cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

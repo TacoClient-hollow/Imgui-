@@ -1,0 +1,64 @@
+{
+  "buildFiles": [
+    "/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/x86/_deps/dobby-src/CMakeLists.txt",
+    "/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/x86/_deps/dobby-src/builtin-plugin/SymbolResolver/CMakeLists.txt",
+    "/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/x86/_deps/dobby-src/external/logging/CMakeLists.txt",
+    "/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/x86/_deps/dobby-src/external/osbase/CMakeLists.txt",
+    "/home/uptightsuperlabs/Desktop/taco-client/app/src/main/cpp/CMakeLists.txt",
+    "/home/uptightsuperlabs/Desktop/taco-client/app/src/main/cpp/cmake/CPM.cmake"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/home/uptightsuperlabs/Android/Sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/home/uptightsuperlabs/Android/Sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "logging::@cba9e4b94e1bd2b2df68": {
+      "artifactName": "logging",
+      "abi": "x86",
+      "output": "/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/x86/_deps/dobby-build/external/logging/liblogging.a",
+      "runtimeFiles": []
+    },
+    "osbase::@e09ae2cd78420703fa22": {
+      "artifactName": "osbase",
+      "abi": "x86",
+      "output": "/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/x86/_deps/dobby-build/external/osbase/libosbase.a",
+      "runtimeFiles": []
+    },
+    "dobby_static::@6545659c670079bcb012": {
+      "artifactName": "dobby_static",
+      "abi": "x86",
+      "output": "/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/x86/_deps/dobby-build/libdobby.a",
+      "runtimeFiles": []
+    },
+    "dobby::@6545659c670079bcb012": {
+      "artifactName": "dobby",
+      "abi": "x86",
+      "output": "/home/uptightsuperlabs/Desktop/taco-client/app/build/intermediates/cxx/Debug/554z3q53/obj/x86/libdobby.so",
+      "runtimeFiles": []
+    },
+    "dobby_symbol_resolver::@1fafcae63ccfe7d4dd70": {
+      "artifactName": "dobby_symbol_resolver",
+      "abi": "x86",
+      "output": "/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/x86/_deps/dobby-build/builtin-plugin/SymbolResolver/libdobby_symbol_resolver.a",
+      "runtimeFiles": []
+    },
+    "mc::@6890427a1f51a3e7e1df": {
+      "artifactName": "mc",
+      "abi": "x86",
+      "output": "/home/uptightsuperlabs/Desktop/taco-client/app/build/intermediates/cxx/Debug/554z3q53/obj/x86/libmc.so",
+      "runtimeFiles": [
+        "/home/uptightsuperlabs/Desktop/taco-client/app/build/intermediates/cxx/Debug/554z3q53/obj/x86/libdobby.so"
+      ]
+    }
+  }
+}

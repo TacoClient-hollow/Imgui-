@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "_deps/dobby-build",
+		"source" : "/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/x86_64/_deps/dobby-src"
+	}
+}

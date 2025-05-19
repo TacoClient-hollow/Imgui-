@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "_deps/dobby-build/builtin-plugin/SymbolResolver",
+		"source" : "/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/armeabi-v7a/_deps/dobby-src/builtin-plugin/SymbolResolver"
+	}
+}

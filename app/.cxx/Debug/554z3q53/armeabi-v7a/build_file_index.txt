@@ -1,0 +1,6 @@
+/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/armeabi-v7a/_deps/dobby-src/CMakeLists.txt
+/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/armeabi-v7a/_deps/dobby-src/builtin-plugin/SymbolResolver/CMakeLists.txt
+/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/armeabi-v7a/_deps/dobby-src/external/logging/CMakeLists.txt
+/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/armeabi-v7a/_deps/dobby-src/external/osbase/CMakeLists.txt
+/home/uptightsuperlabs/Desktop/taco-client/app/src/main/cpp/CMakeLists.txt
+/home/uptightsuperlabs/Desktop/taco-client/app/src/main/cpp/cmake/CPM.cmake

@@ -1,0 +1,21 @@
+# ninja log v5
+0	12	1747617568847749984	dobby-populate-prefix/src/dobby-populate-stamp/dobby-populate-mkdir	aab987d608134c0e
+0	12	1747617568847749984	/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/arm64-v8a/_deps/dobby-subbuild/dobby-populate-prefix/src/dobby-populate-stamp/dobby-populate-mkdir	aab987d608134c0e
+12	701	1747617569537754544	dobby-populate-prefix/src/dobby-populate-stamp/dobby-populate-download	324e07da7f7d6d3d
+12	701	1747617569537754544	/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/arm64-v8a/_deps/dobby-subbuild/dobby-populate-prefix/src/dobby-populate-stamp/dobby-populate-download	324e07da7f7d6d3d
+701	705	0	dobby-populate-prefix/src/dobby-populate-stamp/dobby-populate-update	fdb8b0535de8f48
+701	705	0	/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/arm64-v8a/_deps/dobby-subbuild/dobby-populate-prefix/src/dobby-populate-stamp/dobby-populate-update	fdb8b0535de8f48
+705	707	1747617569543754584	dobby-populate-prefix/src/dobby-populate-stamp/dobby-populate-patch	1a0c013dc02f8de9
+705	707	1747617569543754584	/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/arm64-v8a/_deps/dobby-subbuild/dobby-populate-prefix/src/dobby-populate-stamp/dobby-populate-patch	1a0c013dc02f8de9
+707	709	1747617569545754597	dobby-populate-prefix/src/dobby-populate-stamp/dobby-populate-configure	15155e971952dee0
+707	709	1747617569545754597	/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/arm64-v8a/_deps/dobby-subbuild/dobby-populate-prefix/src/dobby-populate-stamp/dobby-populate-configure	15155e971952dee0
+709	712	1747617569547754610	dobby-populate-prefix/src/dobby-populate-stamp/dobby-populate-build	445d37de2fc8713b
+709	712	1747617569547754610	/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/arm64-v8a/_deps/dobby-subbuild/dobby-populate-prefix/src/dobby-populate-stamp/dobby-populate-build	445d37de2fc8713b
+712	714	1747617569549754623	dobby-populate-prefix/src/dobby-populate-stamp/dobby-populate-install	cf90268ec9d776ae
+712	714	1747617569549754623	/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/arm64-v8a/_deps/dobby-subbuild/dobby-populate-prefix/src/dobby-populate-stamp/dobby-populate-install	cf90268ec9d776ae
+714	716	1747617569551754637	dobby-populate-prefix/src/dobby-populate-stamp/dobby-populate-test	3857906c18bc523a
+714	716	1747617569551754637	/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/arm64-v8a/_deps/dobby-subbuild/dobby-populate-prefix/src/dobby-populate-stamp/dobby-populate-test	3857906c18bc523a
+716	719	1747617569554754656	CMakeFiles/dobby-populate-complete	4754ac34f11b663f
+716	719	1747617569554754656	dobby-populate-prefix/src/dobby-populate-stamp/dobby-populate-done	4754ac34f11b663f
+716	719	1747617569554754656	/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/arm64-v8a/_deps/dobby-subbuild/CMakeFiles/dobby-populate-complete	4754ac34f11b663f
+716	719	1747617569554754656	/home/uptightsuperlabs/Desktop/taco-client/app/.cxx/Debug/554z3q53/arm64-v8a/_deps/dobby-subbuild/dobby-populate-prefix/src/dobby-populate-stamp/dobby-populate-done	4754ac34f11b663f
