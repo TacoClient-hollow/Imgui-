@@ -6,9 +6,9 @@
 #include <string>
 #include <jni.h>
 #include <GLES3/gl3.h>
-#include <imgui.h>
-#include <backends/imgui_impl_android.h>
-#include <backends/imgui_impl_opengl3.h>
+#include <imgui/imgui.h>
+#include <imgui/backends/imgui_impl_android.h>
+#include <imgui/backends/imgui_impl_opengl3.h>
 
 #define LOGE(...) __android_log_print(ANDROID_LOG_ERROR, "TacoClient", __VA_ARGS__)
 #define LOGI(...) __android_log_print(ANDROID_LOG_INFO, "TacoClient", __VA_ARGS__)
@@ -23,8 +23,7 @@ typedef void(*android_main_t)(struct android_app *);
 static eglSwapBuffers_t eglSwapBuffers_original = nullptr;
 static ANativeActivity_onCreate_t ANativeActivity_onCreate_original = nullptr;
 static android_main_t android_main_original = nullptr;
-
-bool setup_initialized = false;
+static bool setup_initialized = false;
 
 void setup_imgui_renderer(EGLDisplay display, EGLSurface surface) {
     if (setup_initialized) {
@@ -37,8 +36,11 @@ void setup_imgui_renderer(EGLDisplay display, EGLSurface surface) {
 
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
+    ImGuiIO& io = ImGui::GetIO();
 
-    ImGui_ImplOpenGL3_Init("#version 300");
+    // Initialize backends
+    ImGui_ImplAndroid_Init(nullptr); // Will need proper ANativeWindow* later
+    ImGui_ImplOpenGL3_Init("#version 300 es"); // Use ES for Android
 
     setup_initialized = true;
 }
@@ -52,31 +54,27 @@ void imgui_render(EGLDisplay display, EGLSurface surface) {
         return;
     }
 
-    int window_width = ANativeWindow_getWidth(reinterpret_cast<ANativeWindow *>(surface));
-    int window_height = ANativeWindow_getHeight(reinterpret_cast<ANativeWindow *>(surface));
-
-    int display_width = window_width;
-    int display_height = window_height;
-
     ImGuiIO& io = ImGui::GetIO();
-    io.DisplaySize = ImVec2(static_cast<float>(window_width), static_cast<float>(window_height));
 
-    if (window_width > 0 && window_height > 0) {
-        io.DisplayFramebufferScale = ImVec2(static_cast<float>(display_width / window_width), static_cast<float>(display_height / window_height));
-    }
+    // Setup display size (you might want to get this from the surface properly)
+    io.DisplaySize = ImVec2(1280, 720); // Temporary values - need proper implementation
 
+    // Start new frame
     ImGui_ImplOpenGL3_NewFrame();
+    ImGui_ImplAndroid_NewFrame();
     ImGui::NewFrame();
-    ImGui::ShowDemoWindow();
-    ImGui::End();
-    ImGui::Render();
 
-    glViewport(0, 0, static_cast<int>(io.DisplaySize.x), static_cast<int>(io.DisplaySize.y));
+    // Your ImGui content
+    ImGui::ShowDemoWindow();
+
+    // Rendering
+    ImGui::Render();
+    glViewport(0, 0, (int)io.DisplaySize.x, (int)io.DisplaySize.y);
     ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 }
 
 EGLBoolean eglSwapBuffers_hook(EGLDisplay display, EGLSurface surface) {
-    LOGI("display: %p; surface: %p", &display, &surface);
+    LOGI("display: %p; surface: %p", display, surface);
     setup_imgui_renderer(display, surface);
     imgui_render(display, surface);
     return eglSwapBuffers_original(display, surface);
@@ -95,7 +93,9 @@ extern "C" void android_main(struct android_app *app) {
 }
 
 jint JNI_DoHooks() {
-    int hook = DobbyHook(DobbySymbolResolver(EGL_L, "eglSwapBuffers"), reinterpret_cast<void *>(eglSwapBuffers_hook), reinterpret_cast<void **>(&eglSwapBuffers_original));
+    int hook = DobbyHook(DobbySymbolResolver(EGL_L, "eglSwapBuffers"), 
+                        reinterpret_cast<void *>(eglSwapBuffers_hook), 
+                        reinterpret_cast<void **>(&eglSwapBuffers_original));
 
     if (hook != 0) {
         LOGE("Failed to hook eglSwapBuffers");

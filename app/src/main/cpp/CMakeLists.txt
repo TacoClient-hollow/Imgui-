@@ -3,9 +3,12 @@ project("mc")
 
 set(CMAKE_CXX_STANDARD 23)
 
-# Add ImGui sources
-file(GLOB IMGUI_SOURCES
-    ${CMAKE_CURRENT_SOURCE_DIR}/include/imgui/*.cpp
+# Add ImGui sources (no wildcards, explicit list recommended)
+set(IMGUI_SOURCES
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/imgui/imgui.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/imgui/imgui_draw.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/imgui/imgui_tables.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/imgui/imgui_widgets.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/include/imgui/backends/imgui_impl_android.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/include/imgui/backends/imgui_impl_opengl3.cpp
 )
@@ -15,13 +18,18 @@ add_library(${CMAKE_PROJECT_NAME} SHARED
     ${IMGUI_SOURCES}
 )
 
-# Add ImGui includes
+# Key fix: Include directories for <imgui/imgui.h>
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
-    ${CMAKE_CURRENT_SOURCE_DIR}/include
-    ${CMAKE_CURRENT_SOURCE_DIR}/include/imgui
-    ${CMAKE_CURRENT_SOURCE_DIR}/include/imgui/backends
+    ${CMAKE_CURRENT_SOURCE_DIR}/include      # Allows #include <imgui/imgui.h>
+    # Backends are under include/imgui/backends, so no extra path needed
 )
 
+# Optional: Mark as system includes to suppress warnings
+# target_include_directories(${CMAKE_PROJECT_NAME} SYSTEM PRIVATE
+#     ${CMAKE_CURRENT_SOURCE_DIR}/include
+# )
+
+# Dependencies
 include(cmake/CPM.cmake)
 
 CPMAddPackage(
